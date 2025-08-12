@@ -17,6 +17,7 @@ variable "main_config" {
 
 variable "endpoints" {
   type = map(object({
+    path                 = string
     method               = string
     version              = optional(string, "v1")
     authorizer           = optional(string)
